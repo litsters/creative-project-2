@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bounty Board</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+  </head>
+  <body>
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/index.html">
+          <img src="/images/icon.png" width="28" height="28">
+        </a>
+
+        <button class="button navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="navbar-menu" id="menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/index.html">Home</a>
+          <a class="navbar-item" href="/about.html">About</a>
+        </div>
+        <div class="navbar-end">
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Welcome to the Bounty Board!</h1>
+        <h2 class="subtitle">
+          Your one stop to find your dream job.
+        </h2>
+        <p>If this page doesn't make sense to you, check out the <a href="/about.html">About</a> page.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Search for Jobs</h2>
+        <div class="field">
+          <label class="label">Keywords</label>
+          <div class="control">
+            <input class="input" type="text" id="keywords" placeholder="Job Title, Description">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Location</label>
+          <div class="control">
+            <input class="input" type="text" id="location" placeholder="City, State">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-success is-small" id="customize-button">Customize Job Boards</button>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-link is-large" id="search-jobs">Search Jobs</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" id="searchResults">
+        <!--Insert results here-->
+      </div>
+    </section>
+
+    <div class="modal" id="board-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Select Job Boards</p>
+          <button class="delete" aria-label="close" id="close-modal"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" id="adzuna" checked>Adzuna
+              </label>
+            </div>
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" id="search" checked>Search.gov Jobs
+              </label>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success" id="save-boards">Save changes</button>
+        </footer>
+      </div>
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bounty Board</strong> by Sam Litster</a>. View source code at 
+            <a href="/index.html">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script text="type/javascript" src="/script.js">
+    </script>
+
+  </body>
+</html>
